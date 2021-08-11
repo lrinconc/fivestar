@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app-image">
+      <img src= alt="">
+    </div>
+    <div class="app-header">
+      <div class="app-header-text">
+        <h1>Five Star Admin Menu</h1>
+      </div>
+    </div>
+    <div class="menu-container">
+      <div class="menu-text">
+        <h3 class="question">What do you need to do today?</h3>
+        <input type="radio" name="action" value="worktime">
+        <label>Submit Work Time Log</label>
+        <br>
+        <input type="radio" name="action" value="material">
+        <label>Submit Material Expense</label>
+        <br>
+        <input type="radio" name="action" value="gas">
+        <label>Submit Gas Expense</label>
+        <br>
+        <input type="radio" name="action" value="representative">
+        <label>Add new representative</label>
+        <br>
+        <input type="radio" name="action" value="job_location">
+        <label>Add new Job Location</label>
+        <br>
+        <button class="btn" type="button" name="button" onclick="displayAction()">Next</button>
+          <script type="text/javascript">
+            function displayAction(){
+              var ele = document.getElementsByName('action');
+              for (var i=0;i< ele.length;i++){
+                if (ele[0].checked){
+                  //Submit Work Time Log
+                  window.open('https://docs.google.com/forms/d/e/1FAIpQLSctTQwyCiko9AzZq0w9aCX86N-6Y8kQQ5mSXIbuwk6H33mqgg/viewform','_blank');
+                }
+                else if (ele[1].checked){
+                  //Submit Material Expense
+                  window.open('https://docs.google.com/forms/d/e/1FAIpQLSeQy8H_afyc-qVRrbIzYa_rfDKnsOJYRRCYu6w9U7I8bQAPPA/viewform','_blank');
+                }
+                else if (ele[2].checked){
+                  //Submit Gas Expense
+                  window.open('https://docs.google.com/forms/d/e/1FAIpQLSflU0jaLCYZM8qMYbHhlekNCG7rqSOxNgE44LZndsSepoyUUQ/viewform','_blank');
+                }
+                else if (ele[3].checked){
+                  //Add New Representative
+                  window.open('_blank');
+                }
+                else if (ele[4].checked){
+                  //Add New Representative
+                  window.open('_blank');
+                }
+             }
+            }
+        </script>
+      </div>
+    </div>
+
+
+  </body>
+  <footer></footer>
+</html>
