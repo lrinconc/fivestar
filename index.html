@@ -47,6 +47,9 @@
                 <input type="radio" name="action" value="job_location">
                 <label>Add new Job Location</label>
                 <br>
+                <input type="radio" name="action" value="report">
+                <label>Create Report</label>
+                <br>
                 <hr>
                 <button type="button" class="btn btn-primary" name="button" onclick="displayAction()">Next</button>
                 <script type="text/javascript">
@@ -67,14 +70,18 @@
                         }
                         else if (ele[3].checked){
                         //Add New Representative
-                        window.open('_blank');
+                        //window.open('_blank');
                         }
                         else if (ele[4].checked){
                         //Add New Representative
-                        window.open('_blank');
+                        //window.open('_blank');
+                        }
+                        else if (ele[5].checked){
+                        //Create Report
+                        window.open('https://datastudio.google.com/s/lP7UItZaoS0');
                         }
                     }
-                    }
+                  }
                 </script>
             </div>
         </div>
